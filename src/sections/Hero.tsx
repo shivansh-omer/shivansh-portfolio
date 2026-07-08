@@ -62,7 +62,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
-            className="text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl"
+            className="text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl"
           >
             Hi, I'm{" "}
             <span className="gradient-text">{siteConfig.name}</span>
@@ -130,7 +130,7 @@ export function Hero() {
           <motion.div
             animate={{ y: [0, -14, 0] }}
             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-            className="glass-card relative rounded-[2rem] p-8"
+            className="glass-card relative rounded-[2rem] p-6 sm:p-8"
             style={{
               transform: `perspective(1000px) rotateY(${mouse.x * 6}deg) rotateX(${-mouse.y * 6}deg)`,
             }}
@@ -162,18 +162,18 @@ export function Hero() {
             </div>
           </motion.div>
 
-          {/* Floating badges */}
+          {/* Floating badges — hidden on xs to avoid overflow, visible from sm up */}
           <motion.div
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-            className="glass absolute -left-8 top-8 rounded-2xl px-4 py-2.5 text-xs font-medium shadow-[var(--shadow-soft)]"
+            className="glass absolute -left-6 top-8 hidden rounded-2xl px-4 py-2.5 text-xs font-medium shadow-[var(--shadow-soft)] sm:block"
           >
             ⚡ SwiftUI · ARKit
           </motion.div>
           <motion.div
             animate={{ y: [0, -10, 0] }}
             transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut", delay: 0.8 }}
-            className="glass absolute -right-6 bottom-16 rounded-2xl px-4 py-2.5 text-xs font-medium shadow-[var(--shadow-soft)]"
+            className="glass absolute -right-4 bottom-16 hidden rounded-2xl px-4 py-2.5 text-xs font-medium shadow-[var(--shadow-soft)] sm:block"
           >
             🤖 Gemini AI
           </motion.div>

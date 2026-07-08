@@ -64,7 +64,7 @@ export function GitHubStats() {
               <img
                 src={`https://ghchart.rshah.org/6366F1/${GITHUB_USERNAME}`}
                 alt={`${GITHUB_USERNAME}'s GitHub contribution graph`}
-                className="w-full min-w-[600px]"
+                className="w-full"
                 loading="lazy"
               />
             </GlassCard>

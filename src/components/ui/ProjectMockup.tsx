@@ -16,7 +16,7 @@ export function PhoneMockup({ gradientFrom, gradientTo, icon, label, image }: Mo
       whileHover={{ rotateY: 4, rotateX: -2 }}
       transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
       style={{ perspective: "1200px" }}
-      className="relative mx-auto w-[220px]"
+      className="relative mx-auto w-[180px] max-w-full sm:w-[220px]"
     >
       <div className="relative rounded-[2.2rem] border-[6px] border-zinc-900 bg-zinc-900 shadow-[var(--shadow-soft-lg)]">
         <div className="absolute left-1/2 top-0 z-20 h-5 w-24 -translate-x-1/2 rounded-b-2xl bg-zinc-900" />

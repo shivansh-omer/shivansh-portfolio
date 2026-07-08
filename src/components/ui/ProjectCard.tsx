@@ -21,7 +21,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-      className="glass-card grid gap-10 rounded-[2rem] p-8 lg:grid-cols-2 lg:p-12"
+      className="glass-card grid gap-10 rounded-[2rem] p-6 sm:p-8 lg:grid-cols-2 lg:p-12"
     >
       <div className={isEven ? "lg:order-1" : "lg:order-2"}>
         {isMobile ? (
