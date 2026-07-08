@@ -10,7 +10,7 @@ export const siteConfig = {
   status: "4th Year B.Tech CSE Student",
   location: "India",
   // TODO: replace with your real address before deploying
-  email: "shivansh.omer@example.com",
+  email: "shivanshomer24@gmail.com",
   resumeUrl: "/resume.pdf",
 };
 
@@ -27,8 +27,8 @@ export const navLinks: NavLink[] = [
 
 export const socialLinks: SocialLink[] = [
   // TODO: replace these with your real profile URLs
-  { label: "GitHub", href: "https://github.com/shivanshomer", icon: "github" },
-  { label: "LinkedIn", href: "https://www.linkedin.com/in/shivanshomer", icon: "linkedin" },
-  { label: "LeetCode", href: "https://leetcode.com/shivanshomer", icon: "leetcode" },
-  { label: "Email", href: "mailto:shivansh.omer@example.com", icon: "mail" },
+  { label: "GitHub", href: "https://github.com/shivansh-omer", icon: "github" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/shivansh-omer-b738a9278 ", icon: "linkedin" },
+  { label: "LeetCode", href: "https://leetcode.com/u/shivanshomer/", icon: "leetcode" },
+  { label: "Email", href: "mailto:shivanshomer24@gmail.com", icon: "mail" },
 ];
