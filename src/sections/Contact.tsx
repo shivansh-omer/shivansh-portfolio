@@ -29,6 +29,9 @@ export function Contact() {
     setSubmitState("loading");
     try {
       const isConfigured =
+        Boolean(emailjsConfig.serviceId) &&
+        Boolean(emailjsConfig.templateId) &&
+        Boolean(emailjsConfig.publicKey) &&
         !emailjsConfig.serviceId.startsWith("YOUR_") &&
         !emailjsConfig.templateId.startsWith("YOUR_") &&
         !emailjsConfig.publicKey.startsWith("YOUR_");

@@ -3,7 +3,8 @@
 // 2. Create an Email Template -> copy the Template ID (use {{name}}, {{email}}, {{message}} variables)
 // 3. Account -> General -> copy your Public Key
 export const emailjsConfig = {
-  serviceId: "YOUR_EMAILJS_SERVICE_ID",
-  templateId: "YOUR_EMAILJS_TEMPLATE_ID",
-  publicKey: "YOUR_EMAILJS_PUBLIC_KEY",
+  serviceId: (import.meta.env.VITE_EMAILJS_SERVICE_ID as string) || "YOUR_EMAILJS_SERVICE_ID",
+  templateId: (import.meta.env.VITE_EMAILJS_TEMPLATE_ID as string) || "YOUR_EMAILJS_TEMPLATE_ID",
+  publicKey: (import.meta.env.VITE_EMAILJS_PUBLIC_KEY as string) || "YOUR_EMAILJS_PUBLIC_KEY",
 };
+
