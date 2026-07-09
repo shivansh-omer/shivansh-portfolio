@@ -28,7 +28,7 @@ export const navLinks: NavLink[] = [
 export const socialLinks: SocialLink[] = [
   // TODO: replace these with your real profile URLs
   { label: "GitHub", href: "https://github.com/shivansh-omer", icon: "github" },
-  { label: "LinkedIn", href: "https://www.linkedin.com/in/shivansh-omer-b738a9278 ", icon: "linkedin" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/shivansh-omer-b738a9278", icon: "linkedin" },
   { label: "LeetCode", href: "https://leetcode.com/u/shivanshomer/", icon: "leetcode" },
   { label: "Email", href: "mailto:shivanshomer24@gmail.com", icon: "mail" },
 ];

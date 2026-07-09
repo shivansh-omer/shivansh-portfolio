@@ -67,7 +67,7 @@ export const projects: Project[] = [
       { label: "Platform", value: "iOS / ARKit" },
     ],
     links: [
-      { label: "View on GitHub", href: "https://github.com/shivanshomer/animal-explorer-ar", type: "github" },
+      { label: "View on GitHub", href: "https://github.com/shivansh-omer/animal-explorer-ar", type: "github" },
       { label: "App Store", href: "#", type: "appstore" },
     ],
     featured: true,
@@ -137,7 +137,7 @@ export const projects: Project[] = [
       { label: "Output", value: "Live Dashboard" },
     ],
     links: [
-      { label: "View on GitHub", href: "https://github.com/shivanshomer/codeatlas-ai", type: "github" },
+      { label: "View on GitHub", href: "https://github.com/shivansh-omer/codeatlas-ai", type: "github" },
       { label: "Live Demo", href: "#", type: "demo" },
     ],
     featured: true,

@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Search, ArrowRight, Mail, FileText } from "lucide-react";
 import { GithubIcon, LinkedInIcon } from "@/components/ui/BrandIcons";
-import { navLinks, siteConfig } from "@/data/siteConfig";
+import { navLinks, siteConfig, socialLinks } from "@/data/siteConfig";
 
 interface CommandItem {
   label: string;
@@ -41,13 +41,19 @@ export function CommandPalette() {
         label: "Open GitHub",
         hint: "External",
         icon: <GithubIcon size={15} />,
-        action: () => window.open("https://github.com/shivanshomer", "_blank"),
+        action: () => {
+          const href = socialLinks.find((l) => l.label === "GitHub")?.href || "https://github.com/shivansh-omer";
+          window.open(href, "_blank");
+        },
       },
       {
         label: "Open LinkedIn",
         hint: "External",
         icon: <LinkedInIcon size={15} />,
-        action: () => window.open("https://www.linkedin.com/in/shivanshomer", "_blank"),
+        action: () => {
+          const href = socialLinks.find((l) => l.label === "LinkedIn")?.href || "https://www.linkedin.com/in/shivansh-omer-b738a9278";
+          window.open(href, "_blank");
+        },
       },
       {
         label: "Email Me",
