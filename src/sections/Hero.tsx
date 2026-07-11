@@ -173,7 +173,7 @@ export function Hero() {
           <motion.div
             animate={{ y: [0, -10, 0] }}
             transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut", delay: 0.8 }}
-            className="glass absolute -right-4 bottom-16 hidden rounded-2xl px-4 py-2.5 text-xs font-medium shadow-[var(--shadow-soft)] sm:block"
+            className="glass absolute -right-4 top-28 hidden rounded-2xl px-4 py-2.5 text-xs font-medium shadow-[var(--shadow-soft)] sm:block"
           >
             🤖 Gemini AI
           </motion.div>
