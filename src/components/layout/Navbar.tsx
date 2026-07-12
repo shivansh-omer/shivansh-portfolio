@@ -6,6 +6,7 @@ import { useActiveSection } from "@/hooks/useActiveSection";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
+import profileImg from "@/assets/images/profile.png";
 
 export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -31,9 +32,17 @@ export function Navbar() {
               e.preventDefault();
               handleNavClick("#home");
             }}
-            className="font-display text-lg font-bold tracking-tight"
+            className="flex items-center"
           >
-            <span className="gradient-text">{siteConfig.initials}</span>
+            <div className="relative h-9 w-9 p-[2px] rounded-full bg-gradient-to-tr from-primary via-secondary to-accent transition-transform duration-300 hover:scale-105">
+              <div className="h-full w-full rounded-full overflow-hidden bg-surface">
+                <img
+                  src={profileImg}
+                  alt={siteConfig.name}
+                  className="h-full w-full object-cover"
+                />
+              </div>
+            </div>
           </a>
 
           <ul className="hidden items-center gap-1 lg:flex">

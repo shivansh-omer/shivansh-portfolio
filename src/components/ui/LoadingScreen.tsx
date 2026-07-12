@@ -1,4 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
+import { siteConfig } from "@/data/siteConfig";
 
 interface LoadingScreenProps {
   visible: boolean;
@@ -20,7 +21,7 @@ export function LoadingScreen({ visible }: LoadingScreenProps) {
               transition={{ duration: 0.5 }}
               className="font-display text-3xl font-bold gradient-text"
             >
-              SO
+              {siteConfig.initials}
             </motion.span>
             <div className="h-[2px] w-32 overflow-hidden rounded-full bg-border">
               <motion.div

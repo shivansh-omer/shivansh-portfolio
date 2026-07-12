@@ -2,6 +2,7 @@ import { Mail, FileText } from "lucide-react";
 import { GithubIcon, LinkedInIcon, LeetCodeIcon } from "@/components/ui/BrandIcons";
 import { socialLinks, siteConfig } from "@/data/siteConfig";
 import { Container } from "@/components/ui/Container";
+import profileImg from "@/assets/images/profile.png";
 
 const iconMap = {
   github: GithubIcon,
@@ -19,8 +20,19 @@ export function Footer() {
     <footer className="border-t border-border py-12">
       <Container>
         <div className="flex flex-col items-center gap-8 text-center">
-          <a href="#home" className="font-display text-2xl font-bold gradient-text">
-            {siteConfig.initials}
+          <a
+            href="#home"
+            className="flex items-center"
+          >
+            <div className="relative h-12 w-12 p-[2.5px] rounded-full bg-gradient-to-tr from-primary via-secondary to-accent transition-transform duration-300 hover:scale-105">
+              <div className="h-full w-full rounded-full overflow-hidden bg-surface">
+                <img
+                  src={profileImg}
+                  alt={siteConfig.name}
+                  className="h-full w-full object-cover"
+                />
+              </div>
+            </div>
           </a>
 
           <div className="flex flex-wrap items-center justify-center gap-4">
