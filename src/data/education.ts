@@ -6,7 +6,7 @@ export const education: EducationItem[] = [
     institution: "Galgotias University",
     degree: "B.Tech, Computer Science & Engineering",
     period: "2023 – 2027",
-    score: "7.5",
+    score: "7.7",
     scoreLabel: "CGPA",
     location: "Greater Noida, India",
     highlights: [
